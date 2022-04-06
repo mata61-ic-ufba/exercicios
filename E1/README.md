@@ -1,7 +1,8 @@
 # Exercício 1
 
-* Criar um arquivo chamado e1-<github-user>.l
+* Criar um arquivo chamado E1/e1-<github-user>.l 
   
-- Fork
-- Clone de sua cópia
-- 
+- Fork do repositório "exercicios"
+- Clone de seu sua cópia
+- ...
+- Subir suas mudanças para aprovação.
