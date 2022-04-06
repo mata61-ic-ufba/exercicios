@@ -8,16 +8,12 @@ int lines = 0;
 
 %%
 
-[a-zA-Z]+   { words++; chars += strlen(yytext); }
+[^ \t\n\r\f\v]+   { words++; chars += strlen(yytext); }
 \n               { chars++; lines++; }
 .                 { chars++; }
 
 %%
 int main(int argc, char **argv) {
-  yyin = fopen(argv[1],"rb");
-  (void) yylex();
-  fclose(yyin);
-
-  printf("%8d %8d %8d\n", lines, words, chars);
-  return(0);
+  yylex();
+  printf("%8d%8d%8d\n", lines, words, chars);
 }
