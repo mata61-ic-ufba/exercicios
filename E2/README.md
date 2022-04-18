@@ -16,7 +16,8 @@ Utilize como base programa flex abaixo (adaptado do livro do Levine, pag 7-8).
  * 258 = 1.3
  * 261
  * Mystery character .
- * 258 = 5 * 264 
+ * 258 = 5 
+ * 264 
  */
  
 %option noyywrap
