@@ -1,0 +1,38 @@
+// Djair Maykon de Novaes Miranda
+
+%option noyywrap
+%{
+enum yytokentype {
+   NUMBER = 258, 
+   ADD = 259, 
+   SUB = 260, 
+   MUL = 261, 
+   DIV = 262, 
+   ABS = 263,  
+   EOL = 264
+};  
+%}    
+
+%%
+
+"+"                 { return ADD; }
+"-"                 { return SUB; }
+"*"                 { return MUL; }
+"/"                 { return DIV; }
+"|"                 { return ABS; }
+[0-9]+(.[0-9]+)?    { return NUMBER; }
+[ \t]               { /* ignore whitespace */ }
+\n                  { return EOL; } 
+.                   { printf("Mystery character %c\n", *yytext); }
+
+%%
+
+int main(int argc, char **argv)
+{      
+   int tok;
+   while ((tok = yylex())) {
+      printf("%d", tok);
+      if (tok == NUMBER) printf(" = %s\n", yytext); 
+      else printf("\n");                
+   } 
+}
