@@ -18,7 +18,7 @@
  
 %option noyywrap
 %{
-#include "calc.tab.h"  
+#include "calc-sauloandradegames.tab.h"  
 %}
 %%
 
