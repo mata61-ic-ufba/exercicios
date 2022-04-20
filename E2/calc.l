@@ -1,4 +1,4 @@
-// Seu nome
+// Felipe Carvalho Góes
 %option noyywrap
 %{
 enum yytokentype {
@@ -19,7 +19,8 @@ enum yytokentype {
 "*"    { return MUL; }
 "/"    { return DIV; }
 "|"    { return ABS; }
-[0-9]+?(\.[0-9]+) { return NUMBER; }
+[0-9]+(\.[0-9]+)? { return NUMBER; }
+([0-9]+\.)|(\.[0-9]+) {printf("Invalid number = %c%c\n", *yytext, *(yytext+1));}
 [ \t]  { /* ignore whitespace */ }
 \n     { return EOL; } 
 .      { printf("Mystery character %c\n", *yytext); }
