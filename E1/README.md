@@ -1,8 +1,12 @@
-# Exercício 1
+# Exercício E1 - Aquecimento
 
-* Criar um arquivo chamado E1/e1-<github-user>.l 
+O exercício E1 foi especificado por meio do Google Classroom da turma MATA61-IC-UFBA neste semestre.
   
-- Fork do repositório "exercicios"
-- Clone de seu sua cópia
-- ...
-- Subir suas mudanças para aprovação.
+## Workflow
+
+- Fazer fork do repositório "exercicios" (uma cópia sua, fora da organização mata61-ic-ufba);
+- Clonar o seu repositório remoto para trabalhar localmente;
+- Criar um arquivo chamado E1/e1-seugithubuser.l com a solução para o exercício E1 atribuído; 
+- Subir suas modificações locais (arquivo E1/e1-seugithubuser.l) para o seu repositório remoto;
+- Criar um patch com suas modificações e submeter para aprovação do professor e eventual inclusão no repositório "exercicios" da organização mata61-ic-ufba.
+- Retornar ao Google classrom para concluir a atividade, indicando a URL do arquivo criado. 
