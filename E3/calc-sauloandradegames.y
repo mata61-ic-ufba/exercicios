@@ -1,3 +1,8 @@
+/* UNIVERSIDADE FEDERAL DA BAHIA */
+/* MATA61 - COMPILADORES - 2022.1 */
+/* Aluno: Saulo Ribeiro de Andrade */
+/* Profa: Christina Von Flack Garcia Chavez */
+
 %{
 #include <stdio.h>
 
@@ -18,5 +23,3 @@ void yyerror(const char* msg) {
 calclist: /* nothing */
 
 %%
-
-
