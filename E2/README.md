@@ -1,5 +1,16 @@
 # E2
 
+## Workflow
+
+- Fazer fork do repositório "exercicios" (uma cópia sua, fora da organização mata61-ic-ufba);
+- Clonar o seu repositório remoto para trabalhar localmente;
+- Criar um arquivo chamado E2/e2-seugithubuser.l com a solução para o exercício E2 atribuído; 
+- Subir suas modificações locais (arquivo E2/e2-seugithubuser.l) para o seu repositório remoto;
+- Criar um patch com suas modificações e submeter para aprovação do professor e eventual inclusão no repositório "exercicios" da organização mata61-ic-ufba.
+- Retornar ao Google classrom para concluir a atividade, indicando a URL do arquivo criado. 
+
+## Especificação
+
 Implementar um analisador léxico para uma calculadora "avançada", que inclui valores em ponto flutuante.
 Por exemplo, o analisador léxico aceita uma operação ```96 + 1.3``` mas não aceita ```96 + 1.3 * .5```
 (considerar que formato 1.1 está ok, mas 1. ou .1 não estão ok).
