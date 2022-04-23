@@ -33,6 +33,7 @@ enum yytokentype {
 "/"    { return DIV; }
 "|"    { return ABS; }
 [0-9]+ { return NUMBER; }
+([0-9])+"."([0-9]) { return NUMBER; }
 [ \t]  { /* ignore whitespace */ }
 \n     { return EOL; } 
 .      { printf("Mystery character %c\n", *yytext); }
