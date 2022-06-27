@@ -3,8 +3,7 @@
 Leia o capítulo 5 do livro do Douglas Thain e reproduza os exemplos das seções 5.1, 5.2 e 5.3.
 Coloque seu código nesta pasta (E5).
 
-/* win_bison.exe -dy .\exemplo1.y 
-para criar o tab.c e tab.h
+/* win_bison.exe -dy .\exemplo1.y   //para criar o tab.c e tab.h
 posso testar com "echo "5+3+4" | .exemplo1" */
 5.1
 Exemplo 1
