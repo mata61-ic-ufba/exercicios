@@ -67,7 +67,7 @@
 
 
 /* First part of user prologue.  */
-#line 1 ".\\exemplo1.y"
+#line 1 ".\\e5-elbervitor.y"
  
 void yyerror (char *msg);
 int yylex (void);
@@ -1134,61 +1134,61 @@ yyreduce:
   switch (yyn)
     {
   case 2: /* prog: expr TOKEN_SEMI  */
-#line 24 ".\\exemplo1.y"
+#line 24 ".\\e5-elbervitor.y"
                        { yyval = yyvsp[-1]; printf("Valor Final: %d \n", yyval); }
 #line 1140 "y.tab.c"
     break;
 
   case 3: /* expr: expr TOKEN_PLUS term  */
-#line 27 ".\\exemplo1.y"
+#line 27 ".\\e5-elbervitor.y"
                             { yyval = yyvsp[-2] + yyvsp[0];}
 #line 1146 "y.tab.c"
     break;
 
   case 4: /* expr: expr TOKEN_MINUS term  */
-#line 28 ".\\exemplo1.y"
+#line 28 ".\\e5-elbervitor.y"
                         { yyval = yyvsp[-2] - yyvsp[0]; }
 #line 1152 "y.tab.c"
     break;
 
   case 5: /* expr: term  */
-#line 29 ".\\exemplo1.y"
+#line 29 ".\\e5-elbervitor.y"
        { yyval = yyvsp[0]; }
 #line 1158 "y.tab.c"
     break;
 
   case 6: /* term: term TOKEN_MUL factor  */
-#line 32 ".\\exemplo1.y"
+#line 32 ".\\e5-elbervitor.y"
                              { yyval = yyvsp[-2] * yyvsp[0]; }
 #line 1164 "y.tab.c"
     break;
 
   case 7: /* term: term TOKEN_DIV factor  */
-#line 33 ".\\exemplo1.y"
+#line 33 ".\\e5-elbervitor.y"
                         { yyval = yyvsp[-2] / yyvsp[0]; }
 #line 1170 "y.tab.c"
     break;
 
   case 8: /* term: factor  */
-#line 34 ".\\exemplo1.y"
+#line 34 ".\\e5-elbervitor.y"
          { yyval = yyvsp[0]; }
 #line 1176 "y.tab.c"
     break;
 
   case 9: /* factor: TOKEN_MINUS factor  */
-#line 38 ".\\exemplo1.y"
+#line 38 ".\\e5-elbervitor.y"
                      { yyval = -yyvsp[0];  }
 #line 1182 "y.tab.c"
     break;
 
   case 10: /* factor: TOKEN_LPAREN expr TOKEN_RPAREN  */
-#line 39 ".\\exemplo1.y"
+#line 39 ".\\e5-elbervitor.y"
                                  { yyval = yyvsp[-1]; }
 #line 1188 "y.tab.c"
     break;
 
   case 11: /* factor: TOKEN_INT  */
-#line 40 ".\\exemplo1.y"
+#line 40 ".\\e5-elbervitor.y"
             { yyval = yyvsp[0]; printf("Valor Reconhecido: %d \n", yyval);}
 #line 1194 "y.tab.c"
     break;
@@ -1388,7 +1388,7 @@ yyreturn:
   return yyresult;
 }
 
-#line 43 ".\\exemplo1.y"
+#line 43 ".\\e5-elbervitor.y"
 
 
 

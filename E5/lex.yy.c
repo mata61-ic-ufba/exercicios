@@ -527,8 +527,8 @@ static const flex_int16_t yy_rule_linenum[9] =
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 ".\\exemplo1.l"
-#line 2 ".\\exemplo1.l"
+#line 1 ".\\e5-elbervitor.l"
+#line 2 ".\\e5-elbervitor.l"
 #include <stdio.h>
 #include <stdlib.h>
 #include "y.tab.h"
@@ -814,7 +814,7 @@ YY_DECL
 
 	{
 /* %% [7.0] user's declarations go here */
-#line 8 ".\\exemplo1.l"
+#line 8 ".\\e5-elbervitor.l"
 
 
 #line 820 "lex.yy.c"
@@ -899,47 +899,47 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 ".\\exemplo1.l"
+#line 10 ".\\e5-elbervitor.l"
 {yylval = atoi(yytext); return TOKEN_INT;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 11 ".\\exemplo1.l"
+#line 11 ".\\e5-elbervitor.l"
 {return TOKEN_PLUS;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 ".\\exemplo1.l"
+#line 12 ".\\e5-elbervitor.l"
 {return TOKEN_MINUS;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 ".\\exemplo1.l"
+#line 13 ".\\e5-elbervitor.l"
 {return TOKEN_MUL;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 14 ".\\exemplo1.l"
+#line 14 ".\\e5-elbervitor.l"
 {return TOKEN_DIV;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 15 ".\\exemplo1.l"
+#line 15 ".\\e5-elbervitor.l"
 {return TOKEN_LPAREN;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 16 ".\\exemplo1.l"
+#line 16 ".\\e5-elbervitor.l"
 {return TOKEN_RPAREN;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 17 ".\\exemplo1.l"
+#line 17 ".\\e5-elbervitor.l"
 {return TOKEN_SEMI;} 
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 21 ".\\exemplo1.l"
+#line 21 ".\\e5-elbervitor.l"
 ECHO;
 	YY_BREAK
 #line 945 "lex.yy.c"
@@ -2091,7 +2091,7 @@ void yyfree (void * ptr )
 
 /* %ok-for-header */
 
-#line 21 ".\\exemplo1.l"
+#line 21 ".\\e5-elbervitor.l"
 
 
 int yywrap(void){       //vai encapsular o programa em lex
